@@ -1,0 +1,36 @@
+.next-page-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .details {
+    margin: 20px 0;
+  }
+  
+  .language-selection {
+    margin: 20px 0;
+  }
+  
+  .bottom-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .syllabus-info-button, .start-test-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .syllabus-info-button {
+    background-color: #f0f0f0;
+    border: none;
+  }
+  
+  .start-test-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  

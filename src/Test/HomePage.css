@@ -1,0 +1,53 @@
+.home-container {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .home-header {
+   
+    padding: 20px;
+    color: white;
+    margin-top: 0;
+  }
+  
+  .home-logo {
+    height: 80px;
+    margin-left: 90%;
+    margin-top: 0;
+  }
+  
+  /* .detailsbutton {
+    margin: 20px;
+    margin-top: 400px;
+  } */
+  
+  .next {
+   margin-top: 500px;
+    margin: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 1500px;
+  }
+  .button {
+    margin-top: 500px;
+    margin: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 90%;
+  }
+  .details-container {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .back-arrow {
+    cursor: pointer;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-right: 90%;
+  }
+  
+  
+  

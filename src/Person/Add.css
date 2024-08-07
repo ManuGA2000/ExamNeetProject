@@ -1,0 +1,276 @@
+
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68%;
+  padding: 10px;
+  height: 100px;
+  border-color: rgb(243, 18, 18);
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.info {
+  align-items: center;
+}
+
+.end-test-button {
+  margin-left: 30%;
+  width: 100px;
+  height: 40%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #007bff;
+  transition: transform 0.2s;
+}
+.end-test-button:hover{
+  transform: scale(1.05);
+}
+
+.App-header {
+  margin-top: 100px; /* Adjusted to avoid content being hidden behind fixed header */
+  margin-right: 30%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(52, 45, 45);
+}
+
+.questions-container {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.question-container {
+  margin-bottom: 20px;
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.options {
+  margin-top: 20px;
+}
+
+.option {
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+/* .correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.incorrect {
+  background-color: #f44336;
+  color: white;
+}
+
+.results {
+  margin-top: 20px;
+  font-size: 1.2em;
+} */
+
+.question-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.option-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-left: 2px solid #ccc;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.questions-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-info {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.question-info.active {
+  background-color: #96a3b1;
+  color: white;
+}
+
+.question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-number {
+  font-weight: bold;
+}
+
+.options-bubbles {
+  display: flex;
+  gap: 10px;
+  margin-right: 20%;
+}
+
+.option-bubble {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.option-bubble.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.option-bubble input[type="radio"] {
+  margin-right: 5px;
+}
+
+.time {
+  margin-left: 40%;
+}
+
+.time-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .time {
+    margin-top: -400px;
+    margin-bottom: -485px;
+    margin-left: 30px;
+  }
+
+  .end-test-button {
+    margin-left: 90%;
+    margin-top: 10px;
+    align-items: end;
+    width: 100px;
+    height: 50px;
+  }
+
+  .App-header {
+    margin-top: 100px;
+    margin-right: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .questions-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    border-left: none;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .sidebar h2 {
+    text-align: center;
+  }
+
+  .questions-info {
+    gap: 10px;
+    height: auto;
+  }
+
+  .question-image,
+  .option-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.warning {
+  color: red;
+  margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .time {
+    margin-top: -400px;
+    margin-bottom: -485px;
+    margin-left: 30px;
+  }
+
+  .questions-container {
+    padding: 10px;
+  }
+
+  .question-container {
+    padding: 10px;
+  }
+
+  .sidebar {
+    padding: 10px;
+  }
+}
